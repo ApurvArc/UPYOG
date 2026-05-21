@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ── Light Mode ─────────────────────────────────────────────────────────── */
+  :root {
+    --background:                  #f4f4f5;
+    --surface:                     #ffffff;
+    --surface-container-lowest:    #ffffff;
+    --surface-container-low:       #efefef;
+    --surface-container:           #e9e9e9;
+    --surface-container-high:      #dedede;
+    --surface-container-highest:   #d0d0d0;
+    --on-background:               #111111;
+    --on-surface:                  #111111;
+    --on-surface-variant:          #6b6b6b;
+    --outline:                     #aaaaaa;
+    --outline-variant:             #e0e0e0;
+    --primary:                     #4f8ef7;
+    --on-primary:                  #ffffff;
+    --primary-container:           #1d4ed8;
+    --secondary:                   #10b981;
+    --on-secondary:                #ffffff;
+    --tertiary:                    #ef4444;
+    --on-tertiary:                 #ffffff;
+  }
+
+  /* ── Dark Mode — true near-black like Zorvyn ────────────────────────────── */
+  .dark {
+    --background:                  #0f0f0f;
+    --surface:                     #1a1a1a;
+    --surface-container-lowest:    #0f0f0f;
+    --surface-container-low:       #1a1a1a;
+    --surface-container:           #202020;
+    --surface-container-high:      #2a2a2a;
+    --surface-container-highest:   #333333;
+    --on-background:               #efefef;
+    --on-surface:                  #efefef;
+    --on-surface-variant:          #888888;
+    --outline:                     #444444;
+    --outline-variant:             #2a2a2a;
+    --primary:                     #4f8ef7;
+    --on-primary:                  #ffffff;
+    --primary-container:           #1d4ed8;
+    --secondary:                   #10b981;
+    --on-secondary:                #ffffff;
+    --tertiary:                    #ef4444;
+    --on-tertiary:                 #ffffff;
+  }
+
+  body {
+    font-family: "Inter", "Outfit", sans-serif;
+    background-color: var(--background);
+    color: var(--on-surface);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* ── Scrollbar ──────────────────────────────────────────────────────────── */
+  ::-webkit-scrollbar              { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track        { background: var(--background); }
+  ::-webkit-scrollbar-thumb        { background: var(--surface-container-highest); border-radius: 10px; }
+  ::-webkit-scrollbar-thumb:hover  { background: var(--outline); }
+}
+
+/* ── Animations ─────────────────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@layer utilities {
+  .animate-fade-in { animation: fadeIn 0.18s ease-out both; }
+}
