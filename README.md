@@ -4,6 +4,30 @@
 
 🔗 **Live Demo:** [https://upyog.vercel.app](https://upyog.vercel.app)
 
+---
+
+## Screenshots
+
+### Dashboard — Dark Mode
+![Dashboard Dark](public/ss-dashboard-dark.png)
+
+### Dashboard — Light Mode
+![Dashboard Light](public/ss-dashboard-light.png)
+
+### Property Ledger
+![Properties](public/ss-properties.png)
+
+### Analytics & Insights
+![Insights](public/ss-insights.png)
+
+### Account Settings
+![Settings](public/ss-settings.png)
+
+### AI Chat Assistant
+![Chat 1](public/ss-chat-1.png)
+![Chat 2](public/ss-chat-2.png)
+
+
 A Property Tax Analytics Dashboard for the UPYOG multi-tenant platform — built with React + Vite, featuring live KPI cards, animated charts, AI-powered chat, and a fully responsive dark/light UI across 10 Indian city tenants.
 
 ---
