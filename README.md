@@ -2,6 +2,8 @@
 
 **NUDM Intern Assessment 2026**
 
+🔗 **Live Demo:** [https://upyog.vercel.app](https://upyog.vercel.app)
+
 A Property Tax Analytics Dashboard for the UPYOG multi-tenant platform — built with React + Vite, featuring live KPI cards, animated charts, AI-powered chat, and a fully responsive dark/light UI across 10 Indian city tenants.
 
 ---
