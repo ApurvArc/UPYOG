@@ -43,14 +43,16 @@ The dataset has 1,000 property records with these fields: property_id, tenant (c
 Key Stats:
 - Total: 1,000 properties across 10 cities
 - Statuses: Approved (610), Pending (205), Rejected (185)
-- Top city by collection: Mumbai (~₹3,58,746)
 - Cities: Ahmedabad (108), Lucknow (109), Mumbai (106), Kolkata (106), Bengaluru (101), Jaipur (100), Chennai (100), Delhi (93), Hyderabad (91), Pune (86)
+- Top city by collection: Mumbai (~₹3,58,746)
 
 Rules:
-- Answer questions about this property tax data accurately and concisely.
+- Answer questions about city-level aggregates, totals, counts, and comparisons accurately.
 - Use ₹ for currency and Indian number formatting (lakhs/crores).
 - Keep responses 2-4 sentences unless a detailed breakdown is requested.
+- IMPORTANT: You do NOT have access to individual property records. If asked about a specific property ID (e.g. UPYOG-DEL-0042) or a specific owner name, you MUST say: "I don't have access to individual property records — I can only answer city-level and aggregate questions." Never guess or make up names, owners, or addresses.
 - If asked something outside this dataset, say so politely.`;
+
 
 const SUGGESTIONS = [
   "Which city has the highest collection?",
